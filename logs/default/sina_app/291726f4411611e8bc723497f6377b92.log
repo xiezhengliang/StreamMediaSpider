@@ -1,0 +1,111 @@
+2018-04-16 09:33:31 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: StreamMediaSpider)
+2018-04-16 09:33:31 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'StreamMediaSpider', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 2, 'DOWNLOAD_TIMEOUT': 10, 'LOG_FILE': 'logs\\default\\sina_app\\291726f4411611e8bc723497f6377b92.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'StreamMediaSpider.spiders', 'RETRY_TIMES': 5, 'SPIDER_MODULES': ['StreamMediaSpider.spiders']}
+2018-04-16 09:33:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-04-16 09:33:31 [py.warnings] WARNING: f:\python\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-04-16 09:33:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['StreamMediaSpider.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'StreamMediaSpider.middlewares.userAgentDownloadMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-16 09:33:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-16 09:33:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['StreamMediaSpider.pipelines.SinaAppPipeline']
+2018-04-16 09:33:31 [scrapy.core.engine] INFO: Spider opened
+2018-04-16 09:33:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-16 09:34:31 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 18 items (at 18 items/min)
+2018-04-16 09:35:31 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 6 pages/min), scraped 36 items (at 18 items/min)
+2018-04-16 09:36:31 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 2 pages/min), scraped 42 items (at 6 items/min)
+2018-04-16 09:37:28 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://newsapi.sina.cn/?resource=feed&abt=139_128_191_101_18_222_155_141_111_149_143_45_135_196_187_38_113_29_21_13_189_99_31_24_207_16_56&abver=1523172941677&accessToken=2.00HwRdNEe3vYNCa9e10f6a4crEydGE&chwm=3023_0001&city=CHXX0037&connectionType=2&deviceId=62364c34335a89ecf096f435c170f46b532ee962&deviceModel=apple-iphone7&from=6067793012&idfa=00000000-0000-0000-0000-000000000000&idfv=82A2A10C-FF04-44A0-9AF1-07161638D7E1&imei=62364c34335a89ecf096f435c170f46b532ee962&location=23.124511%2C113.381203&osVersion=10.3.3&resolution=750x1334&seId=fd59139463&ua=apple-iphone7__SinaNews__6.7.7__iphone__10.3.3&unicomFree=0&weiboSuid=7d835a35f5&weiboUid=3865987439&wm=b207&rand=474&urlSign=a6244546b4&behavior=manual&channel=news_toutiao&downTimes=2&downTotalTimes=2&lastTimestamp=1523175359&listCount=16&p=1&pullDirection=down&pullTimes=2&replacedFlag=0&s=20&upTimes=0&upTotalTimes=0. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-04-16 09:37:31 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 6 pages/min), scraped 60 items (at 18 items/min)
+2018-04-16 09:38:31 [scrapy.extensions.logstats] INFO: Crawled 32 pages (at 12 pages/min), scraped 96 items (at 36 items/min)
+2018-04-16 09:39:31 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 10 pages/min), scraped 126 items (at 30 items/min)
+2018-04-16 09:40:31 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 6 pages/min), scraped 141 items (at 15 items/min)
+2018-04-16 09:41:31 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 5 pages/min), scraped 156 items (at 15 items/min)
+2018-04-16 09:42:31 [scrapy.extensions.logstats] INFO: Crawled 63 pages (at 10 pages/min), scraped 186 items (at 30 items/min)
+2018-04-16 09:43:31 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 3 pages/min), scraped 192 items (at 6 items/min)
+2018-04-16 09:44:31 [scrapy.extensions.logstats] INFO: Crawled 69 pages (at 3 pages/min), scraped 204 items (at 12 items/min)
+2018-04-16 09:45:31 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 9 pages/min), scraped 231 items (at 27 items/min)
+2018-04-16 09:46:31 [scrapy.extensions.logstats] INFO: Crawled 87 pages (at 9 pages/min), scraped 258 items (at 27 items/min)
+2018-04-16 09:47:31 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 9 pages/min), scraped 285 items (at 27 items/min)
+2018-04-16 09:48:31 [scrapy.extensions.logstats] INFO: Crawled 101 pages (at 5 pages/min), scraped 300 items (at 15 items/min)
+2018-04-16 09:49:15 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://newsapi.sina.cn/?resource=feed&abt=139_128_191_101_18_222_155_141_111_149_143_45_135_196_187_38_113_29_21_13_189_99_31_24_207_16_56&abver=1523172941677&accessToken=2.00HwRdNEe3vYNCa9e10f6a4crEydGE&chwm=3023_0001&city=CHXX0037&connectionType=2&deviceId=62364c34335a89ecf096f435c170f46b532ee962&deviceModel=apple-iphone7&from=6067793012&idfa=00000000-0000-0000-0000-000000000000&idfv=82A2A10C-FF04-44A0-9AF1-07161638D7E1&imei=62364c34335a89ecf096f435c170f46b532ee962&location=23.124511%2C113.381203&osVersion=10.3.3&resolution=750x1334&seId=fd59139463&ua=apple-iphone7__SinaNews__6.7.7__iphone__10.3.3&unicomFree=0&weiboSuid=7d835a35f5&weiboUid=3865987439&wm=b207&rand=474&urlSign=a6244546b4&behavior=manual&channel=news_toutiao&downTimes=2&downTotalTimes=2&lastTimestamp=1523175359&listCount=16&p=1&pullDirection=down&pullTimes=2&replacedFlag=0&s=20&upTimes=0&upTotalTimes=0. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-04-16 09:49:31 [scrapy.extensions.logstats] INFO: Crawled 116 pages (at 15 pages/min), scraped 345 items (at 45 items/min)
+2018-04-16 09:50:31 [scrapy.extensions.logstats] INFO: Crawled 125 pages (at 9 pages/min), scraped 372 items (at 27 items/min)
+2018-04-16 09:51:31 [scrapy.extensions.logstats] INFO: Crawled 135 pages (at 10 pages/min), scraped 402 items (at 30 items/min)
+2018-04-16 09:52:31 [scrapy.extensions.logstats] INFO: Crawled 145 pages (at 10 pages/min), scraped 432 items (at 30 items/min)
+2018-04-16 09:53:31 [scrapy.extensions.logstats] INFO: Crawled 151 pages (at 6 pages/min), scraped 450 items (at 18 items/min)
+2018-04-16 09:54:31 [scrapy.extensions.logstats] INFO: Crawled 157 pages (at 6 pages/min), scraped 468 items (at 18 items/min)
+2018-04-16 09:55:30 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://newsapi.sina.cn/?resource=feed&abt=139_128_191_101_18_222_155_141_111_149_143_45_135_196_187_38_113_29_21_13_189_99_31_24_207_16_56&abver=1523172941677&accessToken=2.00HwRdNEe3vYNCa9e10f6a4crEydGE&chwm=3023_0001&city=CHXX0037&connectionType=2&deviceId=62364c34335a89ecf096f435c170f46b532ee962&deviceModel=apple-iphone7&from=6067793012&idfa=00000000-0000-0000-0000-000000000000&idfv=82A2A10C-FF04-44A0-9AF1-07161638D7E1&imei=62364c34335a89ecf096f435c170f46b532ee962&location=23.124511%2C113.381203&osVersion=10.3.3&resolution=750x1334&seId=fd59139463&ua=apple-iphone7__SinaNews__6.7.7__iphone__10.3.3&unicomFree=0&weiboSuid=7d835a35f5&weiboUid=3865987439&wm=b207&rand=474&urlSign=a6244546b4&behavior=manual&channel=news_toutiao&downTimes=2&downTotalTimes=2&lastTimestamp=1523175359&listCount=16&p=1&pullDirection=down&pullTimes=2&replacedFlag=0&s=20&upTimes=0&upTotalTimes=0. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-04-16 09:55:31 [scrapy.extensions.logstats] INFO: Crawled 162 pages (at 5 pages/min), scraped 483 items (at 15 items/min)
+2018-04-16 09:56:31 [scrapy.extensions.logstats] INFO: Crawled 167 pages (at 5 pages/min), scraped 498 items (at 15 items/min)
+2018-04-16 09:57:31 [scrapy.extensions.logstats] INFO: Crawled 174 pages (at 7 pages/min), scraped 519 items (at 21 items/min)
+2018-04-16 09:58:31 [scrapy.extensions.logstats] INFO: Crawled 182 pages (at 8 pages/min), scraped 543 items (at 24 items/min)
+2018-04-16 09:59:31 [scrapy.extensions.logstats] INFO: Crawled 186 pages (at 4 pages/min), scraped 555 items (at 12 items/min)
+2018-04-16 10:00:21 [scrapy.core.scraper] ERROR: Spider error processing <GET http://newsapi.sina.cn/?resource=feed&abt=139_128_191_101_18_222_155_141_111_149_143_45_135_196_187_38_113_29_21_13_189_99_31_24_207_16_56&abver=1523172941677&accessToken=2.00HwRdNEe3vYNCa9e10f6a4crEydGE&chwm=3023_0001&city=CHXX0037&connectionType=2&deviceId=62364c34335a89ecf096f435c170f46b532ee962&deviceModel=apple-iphone7&from=6067793012&idfa=00000000-0000-0000-0000-000000000000&idfv=82A2A10C-FF04-44A0-9AF1-07161638D7E1&imei=62364c34335a89ecf096f435c170f46b532ee962&location=23.124511%2C113.381203&osVersion=10.3.3&resolution=750x1334&seId=fd59139463&ua=apple-iphone7__SinaNews__6.7.7__iphone__10.3.3&unicomFree=0&weiboSuid=7d835a35f5&weiboUid=3865987439&wm=b207&rand=474&urlSign=a6244546b4&behavior=manual&channel=news_toutiao&downTimes=2&downTotalTimes=2&lastTimestamp=1523175359&listCount=16&p=1&pullDirection=down&pullTimes=2&replacedFlag=0&s=20&upTimes=0&upTotalTimes=0> (referer: http://newsapi.sina.cn/?resource=feed&abt=139_128_191_101_18_222_155_141_111_149_143_45_135_196_187_38_113_29_21_13_189_99_31_24_207_16_56&abver=1523172941677&accessToken=2.00HwRdNEe3vYNCa9e10f6a4crEydGE&chwm=3023_0001&city=CHXX0037&connectionType=2&deviceId=62364c34335a89ecf096f435c170f46b532ee962&deviceModel=apple-iphone7&from=6067793012&idfa=00000000-0000-0000-0000-000000000000&idfv=82A2A10C-FF04-44A0-9AF1-07161638D7E1&imei=62364c34335a89ecf096f435c170f46b532ee962&location=23.124511%2C113.381203&osVersion=10.3.3&resolution=750x1334&seId=fd59139463&ua=apple-iphone7__SinaNews__6.7.7__iphone__10.3.3&unicomFree=0&weiboSuid=7d835a35f5&weiboUid=3865987439&wm=b207&rand=474&urlSign=a6244546b4&behavior=manual&channel=news_toutiao&downTimes=2&downTotalTimes=2&lastTimestamp=1523175359&listCount=16&p=1&pullDirection=down&pullTimes=2&replacedFlag=0&s=20&upTimes=0&upTotalTimes=0)
+Traceback (most recent call last):
+  File "f:\python\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "f:\python\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "f:\python\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "f:\python\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "f:\python\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\py_workspace\StreamMediaSpider\StreamMediaSpider\spiders\sinaApp.py", line 73, in parse
+    print("title:===>"+str(n['title']))
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position 31: illegal multibyte sequence
+2018-04-16 10:00:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-16 10:00:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 114,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 13,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 95,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseFailed': 3,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'downloader/request_bytes': 616824,
+ 'downloader/request_count': 315,
+ 'downloader/request_method_count/GET': 315,
+ 'downloader/response_bytes': 7227470,
+ 'downloader/response_count': 201,
+ 'downloader/response_status_count/200': 196,
+ 'downloader/response_status_count/416': 2,
+ 'downloader/response_status_count/502': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 16, 2, 0, 21, 696182),
+ 'item_scraped_count': 584,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 33,
+ 'log_count/WARNING': 4,
+ 'request_depth_max': 195,
+ 'response_received_count': 196,
+ 'retry/count': 117,
+ 'retry/reason_count/502 Bad Gateway': 3,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 13,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 95,
+ 'retry/reason_count/twisted.web._newclient.ResponseFailed': 3,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'scheduler/dequeued': 315,
+ 'scheduler/dequeued/memory': 315,
+ 'scheduler/enqueued': 315,
+ 'scheduler/enqueued/memory': 315,
+ 'spider_exceptions/UnicodeEncodeError': 1,
+ 'start_time': datetime.datetime(2018, 4, 16, 1, 33, 31, 701111)}
+2018-04-16 10:00:21 [scrapy.core.engine] INFO: Spider closed (finished)
