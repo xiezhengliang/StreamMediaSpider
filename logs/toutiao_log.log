@@ -1,0 +1,516 @@
+2018-11-22 11:01:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-22 11:01:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['StreamMediaSpider.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-22 11:01:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'StreamMediaSpider.middlewares.StreammediaspiderSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-22 11:01:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['StreamMediaSpider.pipelines.ToutiaoAppPipeline']
+2018-11-22 11:01:47 [scrapy.core.engine] INFO: Spider opened
+2018-11-22 11:01:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:01:47 [toutiao_app] INFO: Spider opened: toutiao_app
+2018-11-22 11:02:39 [scrapy.core.scraper] ERROR: Error processing {'abstract': '',
+ 'action_list': "[{'action': 1, 'desc': '', 'extra': {}}, {'action': 3, "
+                "'desc': '', 'extra': {}}, {'action': 7, 'desc': '', 'extra': "
+                "{}}, {'action': 9, 'desc': '', 'extra': {}}]",
+ 'aggr_type': '1',
+ 'allow_download': 'False',
+ 'article_sub_type': '0',
+ 'article_tpye': '',
+ 'article_url': 'https://mkt.360jie.com.cn/activity/ch/jrttiosh5/xinxiliu3?utm_content=sucai23&utm_term=zutu',
+ 'ban_comment': '1',
+ 'behot_time': '1542855771',
+ 'bury_count': '0',
+ 'cell_flag': '262154',
+ 'cell_layout_style': '1',
+ 'cell_type': '0',
+ 'comment_count': '0',
+ 'content_decoration': '',
+ 'digg_count': '0',
+ 'display_url': 'https://mkt.360jie.com.cn/activity/ch/jrttiosh5/xinxiliu3?utm_content=sucai23&utm_term=zutu',
+ 'filter_words': "[{'id': '4:2', 'is_selected': False, 'name': '看过了'}, {'id': "
+                 "'2:0', 'is_selected': False, 'name': '屏蔽:360借条-极速网贷的广告'}, "
+                 "{'id': '1:83', 'is_selected': False, 'name': '屏蔽:网贷平台类广告'}, "
+                 "{'id': '1:6', 'is_selected': False, 'name': '屏蔽:金融保险类广告'}]",
+ 'group_flags': '4096',
+ 'group_id': '6449895535821193485',
+ 'has_video': 'False',
+ 'hot': '0',
+ 'ignore_web_transform': '1',
+ 'image_urls': 'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp',
+ 'is_subject': 'False',
+ 'item_id': '6449895535821193485',
+ 'item_version': '0',
+ 'label': '广告',
+ 'label_style': '3',
+ 'large_image_list': "[{'height': 720, 'uri': "
+                     "'large/web.business.image/201806055d0d2e7cd37cef1f43e097a9', "
+                     "'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp', "
+                     "'url_list': [{'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf6-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp'}], "
+                     "'width': 1280}]",
+ 'level': '0',
+ 'log_pb': "{'impr_id': '201811221102510100080612054956C4F', 'is_following': "
+           "'0'}",
+ 'natant_level': '2',
+ 'parameter_id': '10',
+ 'preload_web': '',
+ 'publish_time': '1501733329',
+ 'raw_ad_data': "{'ab_extra': {}, 'dislike': [{'name': '为什么看到此广告', 'open_url': "
+                "'sslocal://webview?url=https%3a%2f%2fi.snssdk.com%2fapi%2fad%2ffeedback%2fprivacy%2fpage%3ftype%3dad_dislike&hide_more=1&title=为什么看到此广告'}], "
+                "'display_type': 2, 'expire_seconds': 274668990, 'id': "
+                "65101856301, 'intercept_flag': 2, 'log_extra': "
+                '\'{"ad_price":"W_YcWwAc8cZb9hxbABzxxgLypr1zH1p9lqPwMA","convert_component_suspend":0,"convert_id":57792824512,"external_action":7,"req_id":"201811221102510100080612054956C4F","rit":1}\', '
+                "'open_url_button_text': '打开应用', 'type': 'web', 'web_title': "
+                "'360借条-极速网贷'}",
+ 'read_count': '53558',
+ 'repin_count': '3',
+ 'rid': '201811221102510100080612054956C4F',
+ 'share_count': '35',
+ 'share_info': "{'cover_image': None, 'description': None, 'on_suppress': 0, "
+               "'share_type': {'pyq': 2, 'qq': 0, 'qzone': 0, 'wx': 0}, "
+               "'share_url': "
+               "'https://m.toutiaocdn.cn/group/6449895535821193485/?iid=32685548645&app=news_article&is_hit_share_recommend=0', "
+               "'title': '9万借款已到账！今日贷款公告：360借钱更划算 - 今日头条', 'token_type': 1, "
+               "'weixin_cover_image': None}",
+ 'share_url': 'https://adshare.toutiao.com/s/84DwuaoIiJQU3TwMKnFYoFehWwio12Zo4tMH_GmzrVwtWn0ucXYTNu8hVX2fYB2Eyhf6bsig==',
+ 'show_dislike': 'True',
+ 'show_portrait': 'False',
+ 'show_portrait_article': 'False',
+ 'source': '360借条-极速网贷',
+ 'source_avatar': 'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201806055d0d2e7cd37cef1f43e097a9~960x0.webp',
+ 'tag': 'ad',
+ 'tag_id': '6449895535821193485',
+ 'title': '借钱不求人，凭信用积分在这能借钱，最高借款20万',
+ 'url': 'https://mkt.360jie.com.cn/activity/ch/jrttiosh5/xinxiliu3?utm_content=sucai23&utm_term=zutu',
+ 'user_repin': '0',
+ 'user_verified': '0',
+ 'video_detail_info': '',
+ 'video_duration': '',
+ 'video_id': '',
+ 'video_play_info': '',
+ 'video_proportion_article': '',
+ 'video_style': '0'}
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\新建文件夹\StreamMediaSpider\StreamMediaSpider\pipelines.py", line 148, in process_item
+    img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
+TypeError: a bytes-like object is required, not 'str'
+2018-11-22 11:02:48 [scrapy.extensions.logstats] INFO: Crawled 171 pages (at 171 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:02:52 [scrapy.core.scraper] ERROR: Error processing {'abstract': '本地人在这量身定制西装!',
+ 'action_list': "[{'action': 1, 'desc': '', 'extra': {}}, {'action': 3, "
+                "'desc': '', 'extra': {}}, {'action': 7, 'desc': '', 'extra': "
+                "{}}, {'action': 9, 'desc': '', 'extra': {}}]",
+ 'aggr_type': '1',
+ 'allow_download': 'False',
+ 'article_sub_type': '0',
+ 'article_tpye': '',
+ 'article_url': 'http://toutiao.com/item/6626295524800594189/',
+ 'ban_comment': '1',
+ 'behot_time': '1542855784',
+ 'bury_count': '0',
+ 'cell_flag': '262730',
+ 'cell_layout_style': '1',
+ 'cell_type': '0',
+ 'comment_count': '0',
+ 'content_decoration': '',
+ 'digg_count': '0',
+ 'display_url': 'http://toutiao.com/item/6626295524800594189/',
+ 'filter_words': "[{'id': '4:2', 'is_selected': False, 'name': '看过了'}, {'id': "
+                 "'2:0', 'is_selected': False, 'name': '屏蔽:高端西服定制的广告'}, {'id': "
+                 "'1:3031', 'is_selected': False, 'name': '屏蔽:婚礼主持教育类广告'}, "
+                 "{'id': '1:39', 'is_selected': False, 'name': '屏蔽:职业教育类广告'}, "
+                 "{'id': '1:5', 'is_selected': False, 'name': '屏蔽:教育培训类广告'}]",
+ 'group_flags': '36928',
+ 'group_id': '6626295524800594189',
+ 'has_video': 'True',
+ 'hot': '0',
+ 'ignore_web_transform': '1',
+ 'image_urls': 'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201811215d0d70d6a48e893547329186~960x0.webp',
+ 'is_subject': 'False',
+ 'item_id': '6626295524800594189',
+ 'item_version': '0',
+ 'label': '广告',
+ 'label_style': '3',
+ 'large_image_list': "[{'height': 720, 'uri': "
+                     "'large/web.business.image/201811215d0d70d6a48e893547329186', "
+                     "'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201811215d0d70d6a48e893547329186~960x0.webp', "
+                     "'url_list': [{'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201811215d0d70d6a48e893547329186~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf6-ttcdn-tos.pstatp.com/img/web.business.image/201811215d0d70d6a48e893547329186~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201811215d0d70d6a48e893547329186~960x0.webp'}], "
+                     "'width': 1280}]",
+ 'level': '0',
+ 'log_pb': "{'impr_id': '201811221103040100080710368182C9B', 'is_following': "
+           "'0'}",
+ 'natant_level': '2',
+ 'parameter_id': '1',
+ 'preload_web': '',
+ 'publish_time': '1542804652',
+ 'raw_ad_data': "{'ab_extra': {}, 'button_style': 1, 'button_text': '查看详情', "
+                "'dislike': [{'name': '为什么看到此广告', 'open_url': "
+                "'sslocal://webview?url=https%3a%2f%2fi.snssdk.com%2fapi%2fad%2ffeedback%2fprivacy%2fpage%3ftype%3dad_dislike&hide_more=1&title=为什么看到此广告'}], "
+                "'display_type': 2, 'expire_seconds': 315806619, 'id': "
+                "1617726293302333, 'intercept_flag': 2, 'log_extra': "
+                '\'{"ad_price":"W_Ycaf_j5k5b9hxp_-PmTomlIvSmOWrEe3ziDw","convert_component_suspend":1,"convert_id":0,"dc":1,"dc_words":"成都","external_action":2,"req_id":"201811221103040100080710368182C9B","rit":1}\', '
+                "'open_url_button_text': '打开应用', 'type': 'web', 'web_title': "
+                "'高端西服定制', 'web_url': "
+                "'https://ad.toutiao.com/tetris/page/1617725236083742/?ad_id=1617726249561203&cid=1617726293302333&req_id=201811221103040100080710368182C9B'}",
+ 'read_count': '79',
+ 'repin_count': '',
+ 'rid': '201811221103040100080710368182C9B',
+ 'share_count': '0',
+ 'share_info': "{'cover_image': None, 'description': None, 'on_suppress': 0, "
+               "'share_type': {'pyq': 2, 'qq': 0, 'qzone': 0, 'wx': 0}, "
+               "'share_url': "
+               "'https://m.toutiaocdn.cn/a6626295524800594189/?iid=32685548645&app=news_article&is_hit_share_recommend=0', "
+               "'title': '本地人在这量身定制西装! - 今日头条', 'token_type': 1, "
+               "'weixin_cover_image': None}",
+ 'share_url': 'https://adshare.toutiao.com/s/08vwzGCdKAcoiPO_pNBzvdJop9XBaZHG9crukh6z5d4tq1ISbHAJEI20Egwve-TTATFUn6LEAJXWo=',
+ 'show_dislike': 'True',
+ 'show_portrait': 'False',
+ 'show_portrait_article': 'False',
+ 'source': '高端西服定制',
+ 'source_avatar': 'http://sf1-ttcdn-tos.pstatp.com/obj/web.business.image/201811215d0d76fdb39e2d5945ebbc5b',
+ 'tag': 'ad.platform.site',
+ 'tag_id': '6626295524800594189',
+ 'title': '成都人在这量身定制西装!',
+ 'url': 'http://toutiao.com/item/6626295524800594189/',
+ 'user_repin': '0',
+ 'user_verified': '0',
+ 'video_detail_info': "{'detail_video_large_image': {'height': 326, 'uri': "
+                      "'video1609/11802000c28c393674eb5', 'url': "
+                      "'http://p1.pstatp.com/video1609/11802000c28c393674eb5', "
+                      "'url_list': [{'url': "
+                      "'http://p1.pstatp.com/video1609/11802000c28c393674eb5'}, "
+                      "{'url': "
+                      "'http://pb3.pstatp.com/video1609/11802000c28c393674eb5'}, "
+                      "{'url': "
+                      "'http://pb9.pstatp.com/video1609/11802000c28c393674eb5'}], "
+                      "'width': 580}, 'direct_play': 1, 'group_flags': 36928, "
+                      "'show_pgc_subscribe': 1, 'video_id': "
+                      "'v02033880000bfp2067vrnhsasbu8v40', "
+                      "'video_preloading_flag': 1, 'video_type': 0, "
+                      "'video_watch_count': 8687, 'video_watching_count': 0}",
+ 'video_duration': '59',
+ 'video_id': 'v02033880000bfp2067vrnhsasbu8v40',
+ 'video_play_info': '{"status":10,"message":"success","video_duration":59.47,"validate":"","enable_ssl":false,"poster_url":"http://p3.pstatp.com/origin/11802000c28c393674eb5","auto_definition":"360p","original_play_url":{"backup_url":"http://voffline.byted.org/download/m/fd74a00000ec83867b2d7/?mosaickey=fd74a00000ec83867b2d7","main_url":"http://voffline.byted.org/download/m/fd74a00000ec83867b2d7/?mosaickey=fd74a00000ec83867b2d7"},"video_list":{"video_1":{"definition":"360p","vtype":"mp4","vwidth":640,"vheight":360,"bitrate":314367,"logo_type":"","codec_type":"h264","size":2877948,"main_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzQ0YjNjNDEyODdhYzg0NzUzODFkNGIyMDk4ZTZjNzUzLzViZjYyYWI0L3ZpZGVvL20vMjIwNTFjOTMyYjRlOGUyNDQwYThlNWM1ZDU1YTk2MmIxOGQxMTVmYWY3MjAwMDAzYzhmNTI5M2RlMTgvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vN2ZjODYzMTJlZDE1ODQxZGMxZWIxMDcyYjRjNzllMTMvNWJmNjJhYjQvdmlkZW8vbS8yMjA1MWM5MzJiNGU4ZTI0NDBhOGU1YzVkNTVhOTYyYjE4ZDExNWZhZjcyMDAwMDNjOGY1MjkzZGUxOC8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzQ0YjNjNDEyODdhYzg0NzUzODFkNGIyMDk4ZTZjNzUzLzViZjYyYWI0L3ZpZGVvL20vMjIwNTFjOTMyYjRlOGUyNDQwYThlNWM1ZDU1YTk2MmIxOGQxMTVmYWY3MjAwMDAzYzhmNTI5M2RlMTgvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vN2ZjODYzMTJlZDE1ODQxZGMxZWIxMDcyYjRjNzllMTMvNWJmNjJhYjQvdmlkZW8vbS8yMjA1MWM5MzJiNGU4ZTI0NDBhOGU1YzVkNTVhOTYyYjE4ZDExNWZhZjcyMDAwMDNjOGY1MjkzZGUxOC8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":7073100,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""},"video_2":{"definition":"480p","vtype":"mp4","vwidth":854,"vheight":480,"bitrate":488828,"logo_type":"","codec_type":"h264","size":4173934,"main_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzQxNmZiYTczYzYwOTQ1M2Y2YWJjYWM3ZGM0NjY2N2FkLzViZjYyYWI0L3ZpZGVvL20vMjIwMjA5ZGQ2MWJmZjZlNDljMjhmNjIyZjMzMTllMjU4NjgxMTVmYjY2ODAwMDA0ZjAyYjJmN2RjZWEvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vNTZiM2FlY2VhMWUzMzMxN2Q5YzAwZjk3MjM2ODQ4YzEvNWJmNjJhYjQvdmlkZW8vbS8yMjAyMDlkZDYxYmZmNmU0OWMyOGY2MjJmMzMxOWUyNTg2ODExNWZiNjY4MDAwMDRmMDJiMmY3ZGNlYS8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzQxNmZiYTczYzYwOTQ1M2Y2YWJjYWM3ZGM0NjY2N2FkLzViZjYyYWI0L3ZpZGVvL20vMjIwMjA5ZGQ2MWJmZjZlNDljMjhmNjIyZjMzMTllMjU4NjgxMTVmYjY2ODAwMDA0ZjAyYjJmN2RjZWEvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vNTZiM2FlY2VhMWUzMzMxN2Q5YzAwZjk3MjM2ODQ4YzEvNWJmNjJhYjQvdmlkZW8vbS8yMjAyMDlkZDYxYmZmNmU0OWMyOGY2MjJmMzMxOWUyNTg2ODExNWZiNjY4MDAwMDRmMDJiMmY3ZGNlYS8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":10998540,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""},"video_3":{"definition":"720p","vtype":"mp4","vwidth":1280,"vheight":720,"bitrate":1064029,"logo_type":"","codec_type":"h264","size":8446928,"main_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzBjNDY0YzI4MTM3Y2EzZmM5MGQ2OTM0ZTBkYzViZWM4LzViZjYyYWI0L3ZpZGVvL20vMjIwZDNjMWRmYTBiMGNkNGQwOWI3NzNiZjFhNmJmNWJiZmIxMTVmMjNmMTAwMDBiNjJjOGY3ZWZhYmEvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vMTA0NDgwNzE4YThlOTBkOGU2MGRlOTk0OGYzMTcyYjEvNWJmNjJhYjQvdmlkZW8vbS8yMjBkM2MxZGZhMGIwY2Q0ZDA5Yjc3M2JmMWE2YmY1YmJmYjExNWYyM2YxMDAwMGI2MmM4ZjdlZmFiYS8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxMS10dC5peGlndWEuY29tLzBjNDY0YzI4MTM3Y2EzZmM5MGQ2OTM0ZTBkYzViZWM4LzViZjYyYWI0L3ZpZGVvL20vMjIwZDNjMWRmYTBiMGNkNGQwOWI3NzNiZjFhNmJmNWJiZmIxMTVmMjNmMTAwMDBiNjJjOGY3ZWZhYmEvP3JjPU0zbDRkblp4ZVRrMWFUTXpPell6TTBBcFFIUkFiMFZHT3pzMk5ETXpNek16TXpRMU5EUTFiMEJvTTNVcFFHWXpkU2xrZFhad2FIY3haSGR5UUNrMFpERTFYMTVsYnpRdGJWOHRMVFV3TDNOekxXOGpieU0yTHk0ekxUUTFMUzR4TUM0dkxqVXRPaU52SXpwaExYRWpPbUJxWW5FclhtOXdiR1p5Y1dBd09nJTNEJTNE","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vMTA0NDgwNzE4YThlOTBkOGU2MGRlOTk0OGYzMTcyYjEvNWJmNjJhYjQvdmlkZW8vbS8yMjBkM2MxZGZhMGIwY2Q0ZDA5Yjc3M2JmMWE2YmY1YmJmYjExNWYyM2YxMDAwMGI2MmM4ZjdlZmFiYS8/cmM9TTNsNGRuWnhlVGsxYVRNek96WXpNMEFwUUhSQWIwVkdPenMyTkRNek16TXpNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRFMVgxNWxielF0YlY4dExUVXdMM056TFc4amJ5TTJMeTR6TFRRMUxTNHhNQzR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":23940540,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""}},"dns_info":{}}',
+ 'video_proportion_article': '1.777',
+ 'video_style': '2'}
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\新建文件夹\StreamMediaSpider\StreamMediaSpider\pipelines.py", line 148, in process_item
+    img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
+TypeError: a bytes-like object is required, not 'str'
+2018-11-22 11:03:47 [scrapy.extensions.logstats] INFO: Crawled 302 pages (at 131 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:04:47 [scrapy.extensions.logstats] INFO: Crawled 461 pages (at 159 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:05:19 [scrapy.core.scraper] ERROR: Error processing {'abstract': '道士分身术！',
+ 'action_list': "[{'action': 1, 'desc': '', 'extra': {}}, {'action': 3, "
+                "'desc': '', 'extra': {}}, {'action': 7, 'desc': '', 'extra': "
+                "{}}, {'action': 9, 'desc': '', 'extra': {}}]",
+ 'aggr_type': '1',
+ 'allow_download': 'False',
+ 'article_sub_type': '0',
+ 'article_tpye': '',
+ 'article_url': 'http://toutiao.com/item/6624277520348872968/',
+ 'ban_comment': '1',
+ 'behot_time': '1542855931',
+ 'bury_count': '0',
+ 'cell_flag': '262730',
+ 'cell_layout_style': '1',
+ 'cell_type': '0',
+ 'comment_count': '0',
+ 'content_decoration': '',
+ 'digg_count': '1',
+ 'display_url': 'http://toutiao.com/item/6624277520348872968/',
+ 'filter_words': "[{'id': '4:2', 'is_selected': False, 'name': '看过了'}, {'id': "
+                 "'2:0', 'is_selected': False, 'name': '屏蔽:超变单机版—道士无敌的广告'}, "
+                 "{'id': '1:217', 'is_selected': False, 'name': '屏蔽:网络游戏类广告'}, "
+                 "{'id': '1:65', 'is_selected': False, 'name': '屏蔽:移动游戏类广告'}, "
+                 "{'id': '1:1', 'is_selected': False, 'name': '屏蔽:应用下载类广告'}]",
+ 'group_flags': '36928',
+ 'group_id': '6624277520348872968',
+ 'has_video': 'True',
+ 'hot': '0',
+ 'ignore_web_transform': '1',
+ 'image_urls': 'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp',
+ 'is_subject': 'False',
+ 'item_id': '6624277520348872968',
+ 'item_version': '0',
+ 'label': '广告',
+ 'label_style': '3',
+ 'large_image_list': "[{'height': 720, 'uri': "
+                     "'large/web.business.image/201808105d0ddb89a6986eae4ede9b69', "
+                     "'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp', "
+                     "'url_list': [{'url': "
+                     "'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf6-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp'}, "
+                     "{'url': "
+                     "'http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp'}], "
+                     "'width': 1280}]",
+ 'level': '0',
+ 'log_pb': "{'impr_id': '20181122110531010003049030074169A', 'is_following': "
+           "'0'}",
+ 'natant_level': '2',
+ 'parameter_id': '8',
+ 'preload_web': '',
+ 'publish_time': '1542334798',
+ 'raw_ad_data': "{'ab_extra': {}, 'button_style': 1, 'button_text': '查看详情', "
+                "'dislike': [{'name': '为什么看到此广告', 'open_url': "
+                "'sslocal://webview?url=https%3a%2f%2fi.snssdk.com%2fapi%2fad%2ffeedback%2fprivacy%2fpage%3ftype%3dad_dislike&hide_more=1&title=为什么看到此广告'}], "
+                "'display_type': 2, 'expire_seconds': 315356863, 'id': "
+                "1617255253919789, 'intercept_flag': 2, 'log_extra': "
+                '\'{"ad_price":"W_Yc-__lI8tb9hz7_-UjyynzfOWpHcYVhz82ew","convert_component_suspend":0,"convert_id":1616547186852910,"external_action":8,"req_id":"20181122110531010003049030074169A","rit":1}\', '
+                "'open_url_button_text': '打开应用', 'type': 'web', 'web_title': "
+                "'超变单机版—道士无敌', 'web_url': "
+                "'https://ad.toutiao.com/tetris/page/1617103625870340/?ad_id=1617254774772791&cid=1617255253919789&req_id=20181122110531010003049030074169A'}",
+ 'read_count': '53776',
+ 'repin_count': '',
+ 'rid': '20181122110531010003049030074169A',
+ 'share_count': '8',
+ 'share_info': "{'cover_image': None, 'description': None, 'on_suppress': 0, "
+               "'share_type': {'pyq': 2, 'qq': 0, 'qzone': 0, 'wx': 0}, "
+               "'share_url': "
+               "'https://m.toutiaocdn.cn/a6624277520348872968/?iid=32685548645&app=news_article&is_hit_share_recommend=0', "
+               "'title': '道士分身术！满级神兽10倍召唤，开局3分钟爆一地神装 - 今日头条', 'token_type': 1, "
+               "'weixin_cover_image': None}",
+ 'share_url': 'https://adshare.toutiao.com/s/07erRE6Dc2gutc0tqHKkgo8A1buH1S5goy676GEdxg2kO2Ky1VkBwC1ptgqisb5evWoUn1VvYyP48=',
+ 'show_dislike': 'True',
+ 'show_portrait': 'False',
+ 'show_portrait_article': 'False',
+ 'source': '超变单机版—道士无敌',
+ 'source_avatar': 'http://sf3-ttcdn-tos.pstatp.com/img/web.business.image/201808105d0ddb89a6986eae4ede9b69~960x0.webp',
+ 'tag': 'ad.platform.site',
+ 'tag_id': '6624277520348872968',
+ 'title': '道士分身术！满级神兽10倍召唤，开局3分钟爆一地神装',
+ 'url': 'http://toutiao.com/item/6624277520348872968/',
+ 'user_repin': '0',
+ 'user_verified': '0',
+ 'video_detail_info': "{'detail_video_large_image': {'height': 326, 'uri': "
+                      "'video1609/114ee0001e2930cf2de62', 'url': "
+                      "'http://p3.pstatp.com/video1609/114ee0001e2930cf2de62', "
+                      "'url_list': [{'url': "
+                      "'http://p3.pstatp.com/video1609/114ee0001e2930cf2de62'}, "
+                      "{'url': "
+                      "'http://pb9.pstatp.com/video1609/114ee0001e2930cf2de62'}, "
+                      "{'url': "
+                      "'http://pb1.pstatp.com/video1609/114ee0001e2930cf2de62'}], "
+                      "'width': 580}, 'direct_play': 1, 'group_flags': 36928, "
+                      "'show_pgc_subscribe': 1, 'video_id': "
+                      "'v02033880000bflv5tnvrnhsasbtmv40', "
+                      "'video_preloading_flag': 1, 'video_type': 0, "
+                      "'video_watch_count': 3166236, 'video_watching_count': "
+                      '0}',
+ 'video_duration': '26',
+ 'video_id': 'v02033880000bflv5tnvrnhsasbtmv40',
+ 'video_play_info': '{"status":10,"message":"success","video_duration":26,"validate":"","enable_ssl":false,"poster_url":"http://p3.pstatp.com/origin/114ee0001e2930cf2de62","auto_definition":"360p","original_play_url":{"backup_url":"http://voffline.byted.org/download/m/f9555000001c581ead76c/?mosaickey=f9555000001c581ead76c","main_url":"http://voffline.byted.org/download/m/f9555000001c581ead76c/?mosaickey=f9555000001c581ead76c"},"video_list":{"video_1":{"definition":"360p","vtype":"mp4","vwidth":640,"vheight":360,"bitrate":802346,"logo_type":"","codec_type":"h264","size":2845883,"main_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZjQ5ZWNjMmNiN2ZhNGZmNzJkNGUyMmNkZjA0MWM3NDMvNWJmNjJiMjUvdmlkZW8vbS8yMjBlMDYwYTQyYTMyYzQ0YWI0OWUxZjNjZjgxM2IxOTkwNDExNWYzNjU2MDAwMDcwZjA0ZjdjZDA4Zi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vZDA5ZTBiN2RhNDE0YWZhMDRjNTY2YWE4YTJjZjI5YTUvNWJmNjJiMjUvdmlkZW8vbS8yMjBlMDYwYTQyYTMyYzQ0YWI0OWUxZjNjZjgxM2IxOTkwNDExNWYzNjU2MDAwMDcwZjA0ZjdjZDA4Zi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZjQ5ZWNjMmNiN2ZhNGZmNzJkNGUyMmNkZjA0MWM3NDMvNWJmNjJiMjUvdmlkZW8vbS8yMjBlMDYwYTQyYTMyYzQ0YWI0OWUxZjNjZjgxM2IxOTkwNDExNWYzNjU2MDAwMDcwZjA0ZjdjZDA4Zi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vZDA5ZTBiN2RhNDE0YWZhMDRjNTY2YWE4YTJjZjI5YTUvNWJmNjJiMjUvdmlkZW8vbS8yMjBlMDYwYTQyYTMyYzQ0YWI0OWUxZjNjZjgxM2IxOTkwNDExNWYzNjU2MDAwMDcwZjA0ZjdjZDA4Zi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":18052740,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""},"video_2":{"definition":"480p","vtype":"mp4","vwidth":854,"vheight":480,"bitrate":1316781,"logo_type":"","codec_type":"h264","size":4517786,"main_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZjRmZGM3NTdmMTFmMzZjMzI0ZDg0ZThmODBmMTgwYWYvNWJmNjJiMjUvdmlkZW8vbS8yMjBjZmQzY2U3NDE0NjY0ZDBkODU2MzRhNzY5ZDQ2Y2RiZTExNWYyMWQ4MDAwMGIzMThkOGU5MjBlNy8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vYzU4MjQwMzkwYmRhNzE0ZmU1Y2E3YzEzYjZiYTYxMzIvNWJmNjJiMjUvdmlkZW8vbS8yMjBjZmQzY2U3NDE0NjY0ZDBkODU2MzRhNzY5ZDQ2Y2RiZTExNWYyMWQ4MDAwMGIzMThkOGU5MjBlNy8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZjRmZGM3NTdmMTFmMzZjMzI0ZDg0ZThmODBmMTgwYWYvNWJmNjJiMjUvdmlkZW8vbS8yMjBjZmQzY2U3NDE0NjY0ZDBkODU2MzRhNzY5ZDQ2Y2RiZTExNWYyMWQ4MDAwMGIzMThkOGU5MjBlNy8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vYzU4MjQwMzkwYmRhNzE0ZmU1Y2E3YzEzYjZiYTYxMzIvNWJmNjJiMjUvdmlkZW8vbS8yMjBjZmQzY2U3NDE0NjY0ZDBkODU2MzRhNzY5ZDQ2Y2RiZTExNWYyMWQ4MDAwMGIzMThkOGU5MjBlNy8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":29627460,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""},"video_3":{"definition":"720p","vtype":"mp4","vwidth":1280,"vheight":720,"bitrate":2532822,"logo_type":"","codec_type":"h264","size":8469923,"main_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZTYzMjU5OGFkNThlYjUzOGUyYjU5NzBhYjI5OWViYmQvNWJmNjJiMjUvdmlkZW8vbS8yMjA0YjI5Y2Y1NjIxNDM0YWY1YWE4YmI0MWM3MDBkYjg2YjExNWYyMzZmMDAwMDkxY2YxZTkzOWI5Yi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_url_1":"aHR0cDovL3Y3LnBzdGF0cC5jb20vMWY3MjJjNDk3MTJkNmZlYWNiZGNhMTVhYTc1YjdmN2IvNWJmNjJiMjUvdmlkZW8vbS8yMjA0YjI5Y2Y1NjIxNDM0YWY1YWE4YmI0MWM3MDBkYjg2YjExNWYyMzZmMDAwMDkxY2YxZTkzOWI5Yi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","main_http_url":"aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vZTYzMjU5OGFkNThlYjUzOGUyYjU5NzBhYjI5OWViYmQvNWJmNjJiMjUvdmlkZW8vbS8yMjA0YjI5Y2Y1NjIxNDM0YWY1YWE4YmI0MWM3MDBkYjg2YjExNWYyMzZmMDAwMDkxY2YxZTkzOWI5Yi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","backup_http_url":"aHR0cDovL3Y3LnBzdGF0cC5jb20vMWY3MjJjNDk3MTJkNmZlYWNiZGNhMTVhYTc1YjdmN2IvNWJmNjJiMjUvdmlkZW8vbS8yMjA0YjI5Y2Y1NjIxNDM0YWY1YWE4YmI0MWM3MDBkYjg2YjExNWYyMzZmMDAwMDkxY2YxZTkzOWI5Yi8/cmM9TTNsM2RuWnhlWGQ1YVRNek96WXpNMEFwUUhSQWIwUTVOek0yUERNek16TTJNelExTkRRMWIwQm9NM1VwUUdZemRTbGtkWFp3YUhjeFpIZHlRQ2swWkRGcVgxNWxiMnN5YVY4dExUVXdMM056TFc4amJ5TTJMalF0TFRFd0xTNHVNaTR2TGpVdE9pTnZJenBoTFhFak9tQnFZbkVyWG05d2JHWnljV0F3T2clM0QlM0Q=","user_video_proxy":1,"socket_buffer":56988360,"preload_size":327680,"preload_interval":45,"preload_min_step":5,"preload_max_step":10,"encryption_key":"","player_access_key":""}},"dns_info":{}}',
+ 'video_proportion_article': '1.777',
+ 'video_style': '2'}
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\新建文件夹\StreamMediaSpider\StreamMediaSpider\pipelines.py", line 148, in process_item
+    img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
+TypeError: a bytes-like object is required, not 'str'
+2018-11-22 11:05:47 [scrapy.extensions.logstats] INFO: Crawled 603 pages (at 142 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:06:47 [scrapy.extensions.logstats] INFO: Crawled 773 pages (at 170 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:07:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-22 11:07:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['StreamMediaSpider.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-22 11:07:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'StreamMediaSpider.middlewares.StreammediaspiderSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-22 11:07:32 [scrapy.middleware] INFO: Enabled item pipelines:
+['StreamMediaSpider.pipelines.ToutiaoAppPipeline']
+2018-11-22 11:07:32 [scrapy.core.engine] INFO: Spider opened
+2018-11-22 11:07:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:07:32 [toutiao_app] INFO: Spider opened: toutiao_app
+2018-11-22 11:08:33 [scrapy.extensions.logstats] INFO: Crawled 161 pages (at 161 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:09:32 [scrapy.extensions.logstats] INFO: Crawled 307 pages (at 146 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 11:10:32 [scrapy.extensions.logstats] INFO: Crawled 476 pages (at 169 pages/min), scraped 1 items (at 1 items/min)
+2018-11-22 11:11:33 [scrapy.extensions.logstats] INFO: Crawled 622 pages (at 146 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:12:33 [scrapy.extensions.logstats] INFO: Crawled 783 pages (at 161 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:13:33 [scrapy.extensions.logstats] INFO: Crawled 948 pages (at 165 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:14:33 [scrapy.extensions.logstats] INFO: Crawled 1081 pages (at 133 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:15:32 [scrapy.extensions.logstats] INFO: Crawled 1208 pages (at 127 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:16:25 [scrapy.core.scraper] ERROR: Error processing {'abstract': '当我们所遇到，冷车启动非常困难，发动机较大抖动和异响，这些都是奔驰发动机的通病的表现，使很多车主很是头疼！经过我们多次经验总结的解决办法是更换凸轮轴调节器，但是出保4s店费用比较昂贵。这个问题奔驰发动机很容易出现，老司机们还是要引起重视滴~！',
+ 'action_list': "[{'action': 1, 'desc': '', 'extra': {}}, {'action': 3, "
+                "'desc': '', 'extra': {}}, {'action': 7, 'desc': '', 'extra': "
+                "{}}, {'action': 9, 'desc': '', 'extra': {}}]",
+ 'aggr_type': '1',
+ 'allow_download': 'False',
+ 'article_sub_type': '0',
+ 'article_tpye': '',
+ 'article_url': 'http://toutiao.com/item/6625870067240272132/',
+ 'ban_comment': '0',
+ 'behot_time': '1542856597',
+ 'bury_count': '0',
+ 'cell_flag': '262154',
+ 'cell_layout_style': '1',
+ 'cell_type': '0',
+ 'comment_count': '0',
+ 'content_decoration': '',
+ 'digg_count': '0',
+ 'display_url': 'http://toutiao.com/item/6625870067240272132/',
+ 'filter_words': "[{'id': '4:2', 'is_selected': False, 'name': '看过了'}, {'id': "
+                 "'2:0', 'is_selected': False, 'name': '屏蔽:汽车启动养护的广告'}, {'id': "
+                 "'1:3005', 'is_selected': False, 'name': '屏蔽:汽修汽保类广告'}, "
+                 "{'id': '1:251', 'is_selected': False, 'name': '屏蔽:汽车服务类广告'}, "
+                 "{'id': '1:2', 'is_selected': False, 'name': '屏蔽:汽车类广告'}]",
+ 'group_flags': '',
+ 'group_id': '6625870067240272132',
+ 'has_video': 'False',
+ 'hot': '0',
+ 'ignore_web_transform': '1',
+ 'is_subject': 'False',
+ 'item_id': '6625870067240272132',
+ 'item_version': '0',
+ 'label': '广告',
+ 'label_style': '3',
+ 'large_image_list': '',
+ 'level': '0',
+ 'log_pb': "{'impr_id': '2018112211163701001205821172992CC', 'is_following': "
+           "'0'}",
+ 'natant_level': '2',
+ 'parameter_id': '1',
+ 'preload_web': '',
+ 'publish_time': '1542705591',
+ 'raw_ad_data': "{'ab_extra': {}, 'dislike': [{'name': '为什么看到此广告', 'open_url': "
+                "'sslocal://webview?url=https%3a%2f%2fi.snssdk.com%2fapi%2fad%2ffeedback%2fprivacy%2fpage%3ftype%3dad_dislike&hide_more=1&title=为什么看到此广告'}], "
+                "'display_type': 4, 'expire_seconds': 315631203, 'id': "
+                "1617643562355716, 'intercept_flag': 2, 'log_extra': "
+                '\'{"ad_price":"W_Yflv_0S7pb9h-W__RLuuCx7ssMvU0GPQ4Cog","convert_component_suspend":0,"convert_id":0,"external_action":0,"req_id":"2018112211163701001205821172992CC","rit":1}\', '
+                "'open_url_button_text': '打开应用', 'type': 'web', 'web_title': "
+                "'汽车启动养护'}",
+ 'read_count': '984',
+ 'repin_count': '',
+ 'rid': '2018112211163701001205821172992CC',
+ 'share_count': '1',
+ 'share_info': "{'cover_image': None, 'description': None, 'on_suppress': 0, "
+               "'share_type': {'pyq': 2, 'qq': 0, 'qzone': 0, 'wx': 0}, "
+               "'share_url': "
+               "'https://m.toutiaocdn.cn/a6625870067240272132/?iid=32685548645&app=news_article&is_hit_share_recommend=0', "
+               "'title': '奔驰发动机凸轮轴通病？老司机们该注意了~！！！ - 今日头条', 'token_type': 1, "
+               "'weixin_cover_image': None}",
+ 'share_url': 'https://adshare.toutiao.com/s/09-RRtFVX-imucqcrS_U79eFq0-Zez-2lkl5dnn-ZTti3f5gP4KqWluAOkxw7wAYjSlREwSdtbrwirlZP3vJhoqVLUaGo=',
+ 'show_dislike': 'True',
+ 'show_portrait': 'False',
+ 'show_portrait_article': 'False',
+ 'source': '汽车启动养护',
+ 'source_avatar': 'http://sf3-ttcdn-tos.pstatp.com/obj/web.business.image/20181120fe69b691e6d1129743d7a4d0',
+ 'tag': 'ad.platform.site',
+ 'tag_id': '6625870067240272132',
+ 'title': '奔驰发动机凸轮轴通病？老司机们该注意了~！！！',
+ 'url': 'http://toutiao.com/item/6625870067240272132/',
+ 'user_repin': '0',
+ 'user_verified': '0',
+ 'video_detail_info': '',
+ 'video_duration': '',
+ 'video_id': '',
+ 'video_play_info': '',
+ 'video_proportion_article': '',
+ 'video_style': '0'}
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\新建文件夹\StreamMediaSpider\StreamMediaSpider\pipelines.py", line 149, in process_item
+    img = json.loads(img).get('url')
+  File "F:\python\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "F:\python\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "F:\python\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-11-22 11:16:32 [scrapy.extensions.logstats] INFO: Crawled 1374 pages (at 166 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:17:33 [scrapy.extensions.logstats] INFO: Crawled 1520 pages (at 146 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:18:33 [scrapy.extensions.logstats] INFO: Crawled 1691 pages (at 171 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:19:33 [scrapy.extensions.logstats] INFO: Crawled 1831 pages (at 140 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:20:33 [scrapy.extensions.logstats] INFO: Crawled 2006 pages (at 175 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:21:32 [scrapy.extensions.logstats] INFO: Crawled 2162 pages (at 156 pages/min), scraped 1 items (at 0 items/min)
+2018-11-22 11:22:32 [scrapy.extensions.logstats] INFO: Crawled 2316 pages (at 154 pages/min), scraped 3 items (at 2 items/min)
+2018-11-22 11:23:33 [scrapy.extensions.logstats] INFO: Crawled 2460 pages (at 144 pages/min), scraped 5 items (at 2 items/min)
+2018-11-22 11:24:32 [scrapy.extensions.logstats] INFO: Crawled 2633 pages (at 173 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:25:32 [scrapy.extensions.logstats] INFO: Crawled 2810 pages (at 177 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:26:33 [scrapy.extensions.logstats] INFO: Crawled 2974 pages (at 164 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:27:33 [scrapy.extensions.logstats] INFO: Crawled 3125 pages (at 151 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:28:33 [scrapy.extensions.logstats] INFO: Crawled 3297 pages (at 172 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:29:33 [scrapy.extensions.logstats] INFO: Crawled 3460 pages (at 163 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:30:32 [scrapy.extensions.logstats] INFO: Crawled 3631 pages (at 171 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:31:32 [scrapy.extensions.logstats] INFO: Crawled 3817 pages (at 186 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:32:33 [scrapy.extensions.logstats] INFO: Crawled 3959 pages (at 142 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:33:33 [scrapy.extensions.logstats] INFO: Crawled 4126 pages (at 167 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:34:32 [scrapy.extensions.logstats] INFO: Crawled 4293 pages (at 167 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:35:32 [scrapy.extensions.logstats] INFO: Crawled 4458 pages (at 165 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:36:32 [scrapy.extensions.logstats] INFO: Crawled 4630 pages (at 172 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:37:33 [scrapy.extensions.logstats] INFO: Crawled 4803 pages (at 173 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:38:32 [scrapy.extensions.logstats] INFO: Crawled 4957 pages (at 154 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:39:32 [scrapy.extensions.logstats] INFO: Crawled 5153 pages (at 196 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:40:32 [scrapy.extensions.logstats] INFO: Crawled 5330 pages (at 177 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:41:32 [scrapy.extensions.logstats] INFO: Crawled 5504 pages (at 174 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:42:33 [scrapy.extensions.logstats] INFO: Crawled 5688 pages (at 184 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:43:32 [scrapy.extensions.logstats] INFO: Crawled 5873 pages (at 185 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:44:32 [scrapy.extensions.logstats] INFO: Crawled 6036 pages (at 163 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:45:32 [scrapy.extensions.logstats] INFO: Crawled 6196 pages (at 160 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:46:32 [scrapy.extensions.logstats] INFO: Crawled 6365 pages (at 169 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:47:32 [scrapy.extensions.logstats] INFO: Crawled 6515 pages (at 150 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:48:33 [scrapy.extensions.logstats] INFO: Crawled 6616 pages (at 101 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:49:33 [scrapy.extensions.logstats] INFO: Crawled 6793 pages (at 177 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:50:33 [scrapy.extensions.logstats] INFO: Crawled 6940 pages (at 147 pages/min), scraped 5 items (at 0 items/min)
+2018-11-22 11:51:33 [scrapy.extensions.logstats] INFO: Crawled 7107 pages (at 167 pages/min), scraped 6 items (at 1 items/min)
+2018-11-22 11:52:33 [scrapy.extensions.logstats] INFO: Crawled 7292 pages (at 185 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:53:32 [scrapy.extensions.logstats] INFO: Crawled 7353 pages (at 61 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:54:32 [scrapy.extensions.logstats] INFO: Crawled 7560 pages (at 207 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:55:33 [scrapy.extensions.logstats] INFO: Crawled 7744 pages (at 184 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:56:33 [scrapy.extensions.logstats] INFO: Crawled 7901 pages (at 157 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:57:33 [scrapy.extensions.logstats] INFO: Crawled 8060 pages (at 159 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:58:32 [scrapy.extensions.logstats] INFO: Crawled 8200 pages (at 140 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 11:59:33 [scrapy.extensions.logstats] INFO: Crawled 8380 pages (at 180 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 12:00:33 [scrapy.extensions.logstats] INFO: Crawled 8518 pages (at 138 pages/min), scraped 6 items (at 0 items/min)
+2018-11-22 12:01:33 [scrapy.extensions.logstats] INFO: Crawled 8677 pages (at 159 pages/min), scraped 6 items (at 0 items/min)

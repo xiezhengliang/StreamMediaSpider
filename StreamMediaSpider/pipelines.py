@@ -41,12 +41,12 @@ class SinaAppPipeline(object):
             curTime.strftime('%Y-%m-%d %H:%M:%S')
             cursor = db.cursor()
             # 保存图片
-            # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
             img = item['pic']
             filename = ""
             if img is not None:
                 try:
-                    image_path = "D:/sina_image/"
+                    image_path ="/repo/smspider/images/sina_app" #linux保存地址
+                    # image_path = "D:/sina_image/"
                     if ".png" in img:
                         filename = str(uuid.uuid1()) + ".png"
                     if ".gif" in img:
@@ -83,12 +83,12 @@ class SinaAppPipeline(object):
             id = cam_row[0]
             amount = cam_row[13] + 1
             # 保存图片
-            # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
             img = item['pic']
             filename = ""
             if img is not None:
                 try:
-                    image_path = "D:/sina_image/"
+                    image_path = "/repo/smspider/images/sina_app"  # linux保存地址
+                    # image_path = "D:/sina_image/"
                     if ".png" in img:
                         filename = str(uuid.uuid1()) + ".png"
                     if ".gif" in img:
@@ -98,14 +98,15 @@ class SinaAppPipeline(object):
                     urllib.request.urlretrieve(img, image_path + '%s' % filename)
                 except Exception as E:
                     pass
-            sql = 'update sina_app set pos =' + '"' + str(item['pos']) + '"' + ',newsId=' + '"' + str(
-                item['newsId']) + '"' + ',title=' + '"' + str(item['title']) + '"' + ',link=' + '"' + str(
-                item['link']) + '"' + ',pic=' + '"' + str(item['pic']) + '"' + ',showTag=' + '"' + str(
-                item['showTag']) + '"' + ',articlePreload=' + '"' + str(
-                item['articlePreload']) + '"' + ',commentStatus=' + '"' + str(
-                item['commentStatus']) + '"' + ',dislikeTags=' + '"' + str(
-                item['dislikeTags']) + '"' + ',update_time=' + '"' + str(updateTime) + '"' + ',amount=' + '"' + str(
-                amount) + '"' + ' where id=' + '"' + str(id) + '"'
+            sql = 'update sina_app set pos =' + '"' + str(item['pos']) + '"' + ',newsId=' + '"' + str(item['newsId']) \
+                  + '"' + ',title=' + '"' + str(item['title']) + '"' + ',link=' + '"' + str(item['link']) \
+                  + '"' + ',pic=' + '"' + str(item['pic']) + '"' + ',showTag=' + '"' + str(item['showTag']) \
+                  + '"' + ',articlePreload=' + '"' + str(item['articlePreload']) \
+                  + '"' + ',commentStatus=' + '"' + str(item['commentStatus']) \
+                  + '"' + ',dislikeTags=' + '"' + str(item['dislikeTags']) \
+                  + '"' + ',local_mag=' + '"' + filename \
+                  + '"' + ',update_time=' + '"' + str(updateTime) + '"' + ',amount=' + '"' + str(amount) \
+                  + '"' + ' where id=' + '"' + str(id) + '"'
             try:
                 # 执行SQL语句
                 cursor = db.cursor()
@@ -143,6 +144,28 @@ class ToutiaoAppPipeline(object):
             curTime = datetime.datetime.now()
             curTime.strftime('%Y-%m-%d %H:%M:%S')
             cursor1 = db.cursor()
+            large_image_list = item['large_image_list']
+            img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
+            img = json.loads(img).get('url')
+            if (img == '' or img == ' '):
+                img = json.loads(large_image_list[1:len(large_image_list) - 1].replace('\'', '"')).get('uri')
+            # 保存图片
+            filename = ""
+            if img is not None:
+                try:
+                    image_path ="/repo/smspider/images/toutiao_app" #linux保存地址
+                    # image_path = "D:/toutiao_image/"
+                    if ".png" in img:
+                        filename = str(uuid.uuid1()) + ".png"
+                    if ".gif" in img:
+                        filename = str(uuid.uuid1()) + ".gif"
+                    if ".webp" in img:
+                        filename = str(uuid.uuid1()) + ".webp"
+                    else:
+                        filename = str(uuid.uuid1()) + ".jpg"
+                    urllib.request.urlretrieve(img, image_path + '%s' % filename)
+                except Exception as E:
+                    pass
             try:
                 cursor1.execute("""INSERT INTO toutiao_app 
                       (abstract, action_list, aggr_type,allow_download, article_sub_type,article_tpye,
@@ -152,13 +175,13 @@ class ToutiaoAppPipeline(object):
                       level,log_pb,natant_level,preload_web,publish_time,raw_ad_data,read_count,repin_count,
                       rid,share_count,share_info,share_url,show_dislike,show_portrait,show_portrait_article,
                       source,source_avatar,tag,tag_id,title,url,user_repin,user_verified,video_detail_info,
-                      video_duration,video_id,video_play_info,video_proportion_article,video_style,create_time,parameter_id)  
+                      video_duration,video_id,video_play_info,video_proportion_article,video_style,create_time,parameter_id,local_img)  
                                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                                      %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                                       %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                                        %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                                         %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                                        %s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""", (
+                                        %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""", (
                     str(item['abstract']).encode('utf-8'),
                     item['action_list'].encode('utf-8'),
                     item['aggr_type'].encode('utf-8'),
@@ -218,21 +241,11 @@ class ToutiaoAppPipeline(object):
                     item['video_proportion_article'].encode('utf-8'),
                     item['video_style'].encode('utf-8'),
                     curTime,
-                    str(item['parameter_id']),))
+                    str(item['parameter_id']), filename))
                 toutiao_ad_id = str(cursor1.lastrowid)
                 cursor1.execute(
                     """INSERT INTO toutiao_ad_to_parameter (toutiao_ad_id, toutiao_para_id,time) VALUES(%s,%s,%s)""",
                     (toutiao_ad_id, str(item['parameter_id']), curTime))
-                large_image_list = item['large_image_list'].encode('utf-8')
-                img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
-                img = json.loads(img).get('url')
-                if (img == '' or img == ' '):
-                    img = json.loads(large_image_list[1:len(large_image_list) - 1].replace('\'', '"')).get('uri')
-                # 保存图片
-                # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
-                image_path = "D:/touttiao_image/"
-                filename = img
-                urllib.request.urlretrieve(img, image_path + '%s' % filename)
                 db.commit()
                 cursor1.close()
             except:
@@ -243,6 +256,28 @@ class ToutiaoAppPipeline(object):
             toutiao_cursor = db.cursor()
             id = cam_row[0]
             amount = cam_row[61] + 1
+            large_image_list = item['large_image_list'].encode('utf-8')
+            img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
+            img = json.loads(img).get('url')
+            if (img == '' or img == ' '):
+                img = json.loads(large_image_list[1:len(large_image_list) - 1].replace('\'', '"')).get('uri')
+            # 保存图片
+            filename = ""
+            if img is not None:
+                try:
+                    image_path ="/repo/smspider/images/toutiao_app" #linux保存地址
+                    # image_path = "D:/toutiao_image/"
+                    if ".png" in img:
+                        filename = str(uuid.uuid1()) + ".png"
+                    if ".gif" in img:
+                        filename = str(uuid.uuid1()) + ".gif"
+                    if ".webp" in img:
+                        filename = str(uuid.uuid1()) + ".webp"
+                    else:
+                        filename = str(uuid.uuid1()) + ".jpg"
+                    urllib.request.urlretrieve(img, image_path + '%s' % filename)
+                except Exception as E:
+                    pass
             sql = 'update toutiao_app set abstract =' + '"' + str(item['abstract'].replace("\"", "'")) + '"' \
                   + ',action_list=' + '"' + str(item['action_list'].replace("\"", "'")) + '"' \
                   + ',aggr_type=' + '"' + str(item['aggr_type'].replace("\"", "'")) + '"' \
@@ -302,6 +337,7 @@ class ToutiaoAppPipeline(object):
                   + ',video_proportion_article=' + '"' + str(item['video_proportion_article'].replace("\"", "'")) + '"' \
                   + ',video_style=' + '"' + str(item['video_style'].replace("\"", "'")) + '"' \
                   + ',update_time=' + '"' + str(updateTime) + '"' \
+                  + ',local_img=' + '"' + filename + '"' \
                   + ',amount=' + '"' + str(amount) + '"' \
                   + ' where id=' + '"' + str(id) + '"'
             try:
@@ -310,16 +346,6 @@ class ToutiaoAppPipeline(object):
                 toutiao_cursor.execute(
                     """INSERT INTO toutiao_ad_to_parameter (toutiao_ad_id, toutiao_para_id,time) VALUES(%s,%s,%s)""",
                     (str(id), str(item['parameter_id']), datetime.datetime.now()))
-                large_image_list = item['large_image_list'].encode('utf-8')
-                img = large_image_list[1:len(large_image_list) - 1].replace('\'', '"')
-                img = json.loads(img).get('url')
-                if img is None:
-                    img = json.loads(large_image_list[1:len(large_image_list) - 1].replace('\'', '"')).get('uri')
-                # 保存图片
-                # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
-                image_path = "D:/touttiao_image/"
-                filename = img
-                urllib.request.urlretrieve(img, image_path + '%s' % filename)
                 # 提交到数据库执行
                 db.commit()
                 toutiao_cursor.close()
@@ -345,16 +371,36 @@ class SouhuAppPipeline(object):
         if not cam_row:
             curTime = datetime.datetime.now()
             curTime.strftime('%Y-%m-%d %H:%M:%S')
+            # 保存图片
+            resource = item['resource1'].replace('\'', '"')
+            j = json.loads(resource)
+            img = j.get('file')
+            filename = ""
+            if img is not None:
+                try:
+                    image_path ="/repo/smspider/images/souhu_app" #linux保存地址
+                    # image_path = "D:/souhu_image/"
+                    if ".png" in img:
+                        filename = str(uuid.uuid1()) + ".png"
+                    if ".gif" in img:
+                        filename = str(uuid.uuid1()) + ".gif"
+                    if ".webp" in img:
+                        filename = str(uuid.uuid1()) + ".webp"
+                    else:
+                        filename = str(uuid.uuid1()) + ".jpg"
+                    urllib.request.urlretrieve(img, image_path + '%s' % filename)
+                except Exception as E:
+                    pass
             cursor.execute("""INSERT INTO souhu_app 
                   (monitorkey, resource,resource_text, resource2,weight, itemspaceid,resource1,
                   impressionid,special,offline,adid,viewmonitor,size,online,position,
                   tag,editNews,statsType,isPreload,newsType,gbcode,commentNum,isHasSponsorships,
                   recomTime,newsId,iconNight,isWeather,isRecom,iconText,link,
-                  iconDay,abposition,adType,playTime,adp_type,isFlash,isHasTv,newschn,create_time)  
+                  iconDay,abposition,adType,playTime,adp_type,isFlash,isHasTv,newschn,create_time,local_img)  
                                 VALUES (%s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s,
                                  %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                                   %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                                   %s, %s, %s, %s, %s, %s, %s, %s)""", (
+                                   %s, %s, %s, %s, %s, %s, %s, %s,%s)""", (
                 item['monitorkey'].encode('utf-8'),
                 item['resource'].encode('utf-8'),
                 resource_text,
@@ -393,19 +439,11 @@ class SouhuAppPipeline(object):
                 item['isFlash'].encode('utf-8'),
                 item['isHasTv'].encode('utf-8'),
                 item['newschn'].encode('utf-8'),
-                curTime))
+                curTime, filename))
             souhu_ad_id = str(cursor.lastrowid)
             cursor.execute(
                 """INSERT INTO souhu_ad_to_parameter (souhu_ad_id, souhu_para_id,time) VALUES(%s,%s,%s)""",
                 (souhu_ad_id, str(item['parameter_id']), curTime))
-            # 保存图片
-            # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
-            resource = item['resource1'].replace('\'', '"')
-            j = json.loads(resource)
-            img = j.get('file')
-            image_path = "D:/souhu_image/"
-            filename = img
-            urllib.request.urlretrieve(img, image_path + '%s' % filename)
             db.commit()
         else:
             updateTime = datetime.datetime.now()
@@ -413,6 +451,26 @@ class SouhuAppPipeline(object):
             id = cam_row[0]
             cursor1 = db.cursor()
             amount = cam_row[41] + 1
+            # 保存图片
+            resource = item['resource1'].replace('\'', '"')
+            j = json.loads(resource)
+            img = j.get('file')
+            filename = ""
+            if img is not None:
+                try:
+                    image_path = "/repo/smspider/images/souhu_app"  # linux保存地址
+                    # image_path = "D:/souhu_image/"
+                    if ".png" in img:
+                        filename = str(uuid.uuid1()) + ".png"
+                    if ".gif" in img:
+                        filename = str(uuid.uuid1()) + ".gif"
+                    if ".webp" in img:
+                        filename = str(uuid.uuid1()) + ".webp"
+                    else:
+                        filename = str(uuid.uuid1()) + ".jpg"
+                    urllib.request.urlretrieve(img, image_path + '%s' % filename)
+                except Exception as E:
+                    pass
             sql = 'update souhu_app set monitorkey =' + '"' + str(item['monitorkey']) + '"' \
                   + ',resource=' + '"' + str(item['resource']) + '"' \
                   + ',resource2=' + '"' + str(item['resource2']) + '"' \
@@ -452,6 +510,7 @@ class SouhuAppPipeline(object):
                   + ',isHasTv=' + '"' + str(item['isHasTv']) + '"' \
                   + ',update_time=' + '"' + str(updateTime) + '"' \
                   + ',amount=' + '"' + str(amount) + '"' \
+                  + ',local_img=' + '"' + filename + '"' \
                   + ' where id=' + '"' + str(id) + '"'
             try:
                 # 执行SQL语句
@@ -459,14 +518,6 @@ class SouhuAppPipeline(object):
                 cursor1.execute(
                     """INSERT INTO souhu_ad_to_parameter (souhu_ad_id, souhu_para_id,time) VALUES(%s,%s,%s)""",
                     (str(id), str(item['parameter_id']), datetime.datetime.now()))
-                # 保存图片
-                # image_path ="/usr/local/Sina/ImageFile" #linux保存地址
-                resource = item['resource1'].replace('\'', '"')
-                j = json.loads(resource)
-                img = j.get('file')
-                image_path = "D:/souhu_image/"
-                filename = img
-                urllib.request.urlretrieve(img, image_path + '%s' % filename)
                 # 提交到数据库执行
                 db.commit()
                 cursor1.close()

@@ -166,3 +166,77 @@
 2018-11-21 18:02:40 [scrapy.extensions.logstats] INFO: Crawled 1591 pages (at 16 pages/min), scraped 4409 items (at 45 items/min)
 2018-11-21 18:03:40 [scrapy.extensions.logstats] INFO: Crawled 1608 pages (at 17 pages/min), scraped 4453 items (at 44 items/min)
 2018-11-21 18:04:40 [scrapy.extensions.logstats] INFO: Crawled 1623 pages (at 15 pages/min), scraped 4490 items (at 37 items/min)
+2018-11-22 10:26:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-22 10:26:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['StreamMediaSpider.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-22 10:26:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'StreamMediaSpider.middlewares.StreammediaspiderSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-22 10:26:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['StreamMediaSpider.pipelines.SinaAppPipeline']
+2018-11-22 10:26:29 [scrapy.core.engine] INFO: Spider opened
+2018-11-22 10:26:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 10:26:29 [sina_app] INFO: Spider opened: sina_app
+2018-11-22 10:27:29 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 8 pages/min), scraped 24 items (at 24 items/min)
+2018-11-22 10:28:29 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 9 pages/min), scraped 48 items (at 24 items/min)
+2018-11-22 10:29:29 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 10 pages/min), scraped 76 items (at 28 items/min)
+2018-11-22 10:30:29 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 14 pages/min), scraped 115 items (at 39 items/min)
+2018-11-22 10:31:29 [scrapy.extensions.logstats] INFO: Crawled 52 pages (at 11 pages/min), scraped 142 items (at 27 items/min)
+2018-11-22 10:32:29 [scrapy.extensions.logstats] INFO: Crawled 62 pages (at 10 pages/min), scraped 172 items (at 30 items/min)
+2018-11-22 10:33:29 [scrapy.extensions.logstats] INFO: Crawled 75 pages (at 13 pages/min), scraped 209 items (at 37 items/min)
+2018-11-22 10:34:29 [scrapy.extensions.logstats] INFO: Crawled 84 pages (at 9 pages/min), scraped 230 items (at 21 items/min)
+2018-11-22 10:35:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-22 10:35:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['StreamMediaSpider.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-22 10:35:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'StreamMediaSpider.middlewares.StreammediaspiderSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-22 10:35:01 [scrapy.middleware] INFO: Enabled item pipelines:
+['StreamMediaSpider.pipelines.SinaAppPipeline']
+2018-11-22 10:35:01 [scrapy.core.engine] INFO: Spider opened
+2018-11-22 10:35:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-22 10:35:01 [sina_app] INFO: Spider opened: sina_app
+2018-11-22 10:36:01 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 36 items (at 36 items/min)
+2018-11-22 10:37:01 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 12 pages/min), scraped 66 items (at 30 items/min)
+2018-11-22 10:38:01 [scrapy.extensions.logstats] INFO: Crawled 37 pages (at 13 pages/min), scraped 105 items (at 39 items/min)
+2018-11-22 10:39:01 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 8 pages/min), scraped 123 items (at 18 items/min)
+2018-11-22 10:40:01 [scrapy.extensions.logstats] INFO: Crawled 52 pages (at 7 pages/min), scraped 144 items (at 21 items/min)
+2018-11-22 10:41:01 [scrapy.extensions.logstats] INFO: Crawled 61 pages (at 9 pages/min), scraped 166 items (at 22 items/min)
+2018-11-22 10:42:01 [scrapy.extensions.logstats] INFO: Crawled 71 pages (at 10 pages/min), scraped 193 items (at 27 items/min)
+2018-11-22 10:43:01 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 11 pages/min), scraped 223 items (at 30 items/min)
+2018-11-22 10:44:01 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 14 pages/min), scraped 258 items (at 35 items/min)
+2018-11-22 10:45:01 [scrapy.extensions.logstats] INFO: Crawled 105 pages (at 9 pages/min), scraped 285 items (at 27 items/min)
