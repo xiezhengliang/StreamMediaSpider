@@ -19,7 +19,7 @@ cssselect==1.0.1
 cycler==0.10.0
 demjson==2.2.4
 diff-match-patch==20121119
-Django==2.0.1
+Django==2.2.13
 django-celery==3.2.2
 django-celery-results==1.0.1
 django-cors-headers==2.2.0
