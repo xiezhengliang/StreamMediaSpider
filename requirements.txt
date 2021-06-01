@@ -88,7 +88,7 @@ tablib==0.12.1
 Twisted==17.9.0
 tzlocal==1.5.1
 unicodecsv==0.14.1
-urllib3==1.22
+urllib3==1.26.5
 views==0.3
 vine==1.1.4
 w3lib==1.18.0
